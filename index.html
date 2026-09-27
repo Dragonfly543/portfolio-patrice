@@ -493,6 +493,22 @@
       background:#08111f;
     }
     </style>
+  <style id="galerie-creative-styles">
+    #galerie-creative { scroll-margin-top: 90px; }
+    #galerie-creative .creative-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr)); gap:24px; }
+    #galerie-creative .creative-card { margin:0; min-width:0; border:1px solid var(--line); border-radius:20px; overflow:hidden; background:var(--card); }
+    #galerie-creative .creative-link { display:block; padding:14px; background:var(--bg2); }
+    #galerie-creative .creative-link:hover { background:var(--card2); }
+    #galerie-creative .creative-link:focus-visible { outline:3px solid var(--cyan); outline-offset:-3px; }
+    #galerie-creative .creative-link img { width:100%; height:auto; aspect-ratio:2/3; object-fit:contain; }
+    #galerie-creative figcaption { padding:16px 18px; font-weight:700; }
+    #galerie-creative figcaption span { display:block; margin-top:6px; color:var(--muted); font-size:.82rem; font-weight:400; }
+    #galerie-creative .section-head { display:block; }
+    #galerie-creative .section-head > div { min-width:0; }
+    #galerie-creative h2 { max-width:none; font-size:clamp(2rem,3.5vw,3rem); }
+    #galerie-creative .section-head p { max-width:780px; }
+    @media (max-width:600px) { #galerie-creative h2 { font-size:1.9rem; letter-spacing:-.5px; overflow-wrap:break-word; } }
+  </style>
 </head>
 <body>
   <nav>
@@ -805,6 +821,62 @@
             </div>
           </article>
 
+        </div>
+      </div>
+    </section>
+
+    <section id="galerie-creative" aria-labelledby="galerie-creative-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="mini">Création visuelle</div>
+            <h2 id="galerie-creative-title">Galerie créative — Livres &amp; univers visuels</h2>
+          </div>
+          <p>Portraits fantastiques et couvertures de livres : sept créations réunies dans une même galerie. Cliquez sur une image pour l’ouvrir en grand dans un nouvel onglet.</p>
+        </div>
+        <div class="creative-grid">
+          <figure class="creative-card">
+            <a class="creative-link" href="images/galerie-creative/femme-serpent.png" target="_blank" rel="noopener noreferrer" aria-label="Agrandir : Portrait mystique de la femme-serpent (nouvel onglet)">
+              <img src="images/galerie-creative/femme-serpent.png" alt="Portrait mystique de la femme-serpent" loading="lazy" decoding="async" />
+            </a>
+            <figcaption>Portrait mystique de la femme-serpent<span>Ouvrir l’image en grand ↗</span></figcaption>
+          </figure>
+          <figure class="creative-card">
+            <a class="creative-link" href="images/galerie-creative/marque-dragon-ensorcele.png" target="_blank" rel="noopener noreferrer" aria-label="Agrandir : La marque du dragon ensorcelé (nouvel onglet)">
+              <img src="images/galerie-creative/marque-dragon-ensorcele.png" alt="La marque du dragon ensorcelé" loading="lazy" decoding="async" />
+            </a>
+            <figcaption>La marque du dragon ensorcelé<span>Ouvrir l’image en grand ↗</span></figcaption>
+          </figure>
+          <figure class="creative-card">
+            <a class="creative-link" href="images/galerie-creative/marque-dragon-ville.png" target="_blank" rel="noopener noreferrer" aria-label="Agrandir : La marque du dragon calcine la ville (nouvel onglet)">
+              <img src="images/galerie-creative/marque-dragon-ville.png" alt="La marque du dragon calcine la ville" loading="lazy" decoding="async" />
+            </a>
+            <figcaption>La marque du dragon calcine la ville<span>Ouvrir l’image en grand ↗</span></figcaption>
+          </figure>
+          <figure class="creative-card">
+            <a class="creative-link" href="images/galerie-creative/au-dela-des-mondes.png" target="_blank" rel="noopener noreferrer" aria-label="Agrandir : Au-delà des mondes parallèles (nouvel onglet)">
+              <img src="images/galerie-creative/au-dela-des-mondes.png" alt="Au-delà des mondes parallèles" loading="lazy" decoding="async" />
+            </a>
+            <figcaption>Au-delà des mondes parallèles<span>Ouvrir l’image en grand ↗</span></figcaption>
+          </figure>
+          <figure class="creative-card">
+            <a class="creative-link" href="images/galerie-creative/aponaki-cles-du-silence.png" target="_blank" rel="noopener noreferrer" aria-label="Agrandir : Aponakï — Les Clés du Silence (nouvel onglet)">
+              <img src="images/galerie-creative/aponaki-cles-du-silence.png" alt="Aponakï — Les Clés du Silence" loading="lazy" decoding="async" />
+            </a>
+            <figcaption>Aponakï — Les Clés du Silence<span>Ouvrir l’image en grand ↗</span></figcaption>
+          </figure>
+          <figure class="creative-card">
+            <a class="creative-link" href="images/galerie-creative/dragon-en-trois-parties.png" target="_blank" rel="noopener noreferrer" aria-label="Agrandir : Le Dragon en Trois Parties (nouvel onglet)">
+              <img src="images/galerie-creative/dragon-en-trois-parties.png" alt="Le Dragon en Trois Parties" loading="lazy" decoding="async" />
+            </a>
+            <figcaption>Le Dragon en Trois Parties<span>Ouvrir l’image en grand ↗</span></figcaption>
+          </figure>
+          <figure class="creative-card">
+            <a class="creative-link" href="images/galerie-creative/autre-rive-monde-inconnu.png" target="_blank" rel="noopener noreferrer" aria-label="Agrandir : L’Autre Rive — Le Monde Inconnu (nouvel onglet)">
+              <img src="images/galerie-creative/autre-rive-monde-inconnu.png" alt="L’Autre Rive — Le Monde Inconnu" loading="lazy" decoding="async" />
+            </a>
+            <figcaption>L’Autre Rive — Le Monde Inconnu<span>Ouvrir l’image en grand ↗</span></figcaption>
+          </figure>
         </div>
       </div>
     </section>
